@@ -4,7 +4,12 @@ var currentPrice = document.querySelector("#current-price");
 var calculateBtn = document.querySelector("#calculate-btn");
 var output = document.querySelector("#output-box");
 
+function outputHide()
+{
+    output.style.display = "none";
+}
 
+outputHide();
 
 function calculator(initialPrice, stocks, currentPrice)
 {
@@ -16,17 +21,17 @@ function calculator(initialPrice, stocks, currentPrice)
         var profit = totalCurrentPrice - totalInitialPrice;
         var profitPercent = (profit / totalInitialPrice) * 100;
 
-        showOutputMessage(`Your Profit is ${profit} and Profit Percentage ${profitPercent}%`);
+        showOutputMessage(`Your Profit is ${profit} and Profit Percentage ${profitPercent.toFixed(2)}%`, 'green');
     }
     else if(totalCurrentPrice < totalInitialPrice)
     {
         var loss = totalInitialPrice - totalCurrentPrice ;
         var lossPercent = (loss/ totalInitialPrice) * 100;
-        showOutputMessage(`Your Loss is ${loss} and Loss Percentage ${lossPercent}%`);
+        showOutputMessage(`Your Loss is ${loss} and Loss Percentage ${lossPercent.toFixed(2)}%`, 'red');
     }
     else
     {
-        showOutputMessage("NO GAIN OR LOSS");
+        showOutputMessage("NO GAIN OR LOSS", 'black');
     }
 }
 
@@ -44,7 +49,7 @@ calculateBtn.addEventListener("click", function() {
         }
         else if(initialPrice.value == 0 || currentPrice.value == 0 || stocks.value == 0)
         {
-            errorHandler("Input value cannot be zero!");
+            alert("Please fill out all Fields!");
         }
         else {
             errorHandler("Input cannot be a alphabet, Please input a positive number")
@@ -56,8 +61,14 @@ calculateBtn.addEventListener("click", function() {
 function errorHandler(error)
 {
     output.innerText = error;
+    output.style.color = 'black';
+
 }
 
-function showOutputMessage(message){
+function showOutputMessage(message, colour){
+    output.style.display = "block";
+
+    output.style.color = colour;
+
     output.innerText = message;
 }
