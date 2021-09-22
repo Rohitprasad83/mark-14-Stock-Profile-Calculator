@@ -38,3 +38,31 @@ input {
   margin: 1rem auto;
   font-size: 25px;
 }
+
+.footer {
+  margin-top: 80px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.footer .footer-header {
+  font-weight: bold;
+  font-size: large;
+}
+
+.footer ul {
+  padding-inline-start: 0px;
+}
+
+.list-item-inline {
+  display: inline;
+  padding: 0rem 0.3rem;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.footer .link {
+  color: blue;
+}
