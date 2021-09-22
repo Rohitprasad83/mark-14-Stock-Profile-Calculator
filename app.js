@@ -59,7 +59,9 @@ calculateBtn.addEventListener("click", function() {
 
 
 function errorHandler(error)
-{
+{   
+    output.style.display = "block";
+
     output.innerText = error;
     output.style.color = 'black';
 
