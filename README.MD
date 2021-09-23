@@ -1,3 +1,6 @@
 This app will calculate the profit or loss of stocks.
 
-The app will take input of initial stock price, number of stocks and current stock price, then give output.
+1. Asks the user's stock price for one stock when he bought it.
+2. Asks the stocks quantity as well.
+3. Now asks today's price of that Stock.
+4. Tells the Profit / Loss, the user's making - In Percentage and In Absolute
