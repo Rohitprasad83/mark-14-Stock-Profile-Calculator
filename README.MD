@@ -1,12 +1,27 @@
-This app will calculate the profit or loss of stocks.
+# Stock Profile Calculator App
 
-1. Asks the user's stock price for one stock when he bought it.
-2. Asks the stocks quantity as well.
-3. Now asks today's price of that Stock.
-4. Tells the Profit / Loss, the user's making - In Percentage and In Absolute
 
-Tech Stack -
+This app calculates the total profit or loss of a stock, also display the total percentage of profit/loss.
+
+
+## Interface of the app.
+
+<img src="./images/interface.png" alt="drawing" width="200"/>
+
+## How to use the app:
+
+1. Enter the initial stock price for one stock.
+2. Enter the number of stocks(quantity).
+3. Enter the current stock price.
+4. Click on Tell me button.
+5. Displays the output in absolute and percentage.
+
+## Tech Stack used:
 
 1. HTML
 2. CSS
 3. JavaScript
+
+## Link of the app:
+
+[Stock Profile calculator](https://rohit-mark-14-stock-calculator.netlify.app/)
