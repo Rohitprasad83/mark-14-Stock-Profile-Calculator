@@ -6,7 +6,7 @@ This app calculates the total profit or loss of a stock, also display the total 
 
 ## Interface of the app.
 
-<img src="./images/interface.png" alt="drawing" width="200"/>
+<img src="./images/interface.png" alt="interface" width="500"/>
 
 ## How to use the app:
 
